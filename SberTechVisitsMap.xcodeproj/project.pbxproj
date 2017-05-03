@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		E60641A71EBA3B2B004A4212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641A61EBA3B2B004A4212 /* main.m */; };
 		E60641AA1EBA3B2B004A4212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641A91EBA3B2B004A4212 /* AppDelegate.m */; };
-		E60641AD1EBA3B2B004A4212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641AC1EBA3B2B004A4212 /* ViewController.m */; };
-		E60641B01EBA3B2B004A4212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60641AE1EBA3B2B004A4212 /* Main.storyboard */; };
 		E60641B21EBA3B2B004A4212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60641B11EBA3B2B004A4212 /* Assets.xcassets */; };
 		E60641B51EBA3B2B004A4212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60641B31EBA3B2B004A4212 /* LaunchScreen.storyboard */; };
+		E60641C01EBA3F6C004A4212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60641BF1EBA3F6C004A4212 /* Main.storyboard */; };
+		E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C21EBA3FF8004A4212 /* STVVisitsApiClient.m */; };
+		E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C61EBA413D004A4212 /* STVApiVisit.m */; };
+		E60641CA1EBA414C004A4212 /* STVApiOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C91EBA414C004A4212 /* STVApiOrganization.m */; };
+		E60641D01EBA446C004A4212 /* STVApiVisitMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641CF1EBA446C004A4212 /* STVApiVisitMapper.m */; };
+		E60641D31EBA44B1004A4212 /* STVJsonMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641D21EBA44B1004A4212 /* STVJsonMapper.m */; };
+		E60641D61EBA4909004A4212 /* STVApiOrganizatonMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641D51EBA4909004A4212 /* STVApiOrganizatonMapper.m */; };
+		E60641D91EBA4ABC004A4212 /* STVApiVisitValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641D81EBA4ABC004A4212 /* STVApiVisitValidator.m */; };
+		E60641DD1EBA4BF9004A4212 /* STVApiOrganizationValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +27,27 @@
 		E60641A61EBA3B2B004A4212 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E60641A81EBA3B2B004A4212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E60641A91EBA3B2B004A4212 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E60641AB1EBA3B2B004A4212 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E60641AC1EBA3B2B004A4212 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E60641AF1EBA3B2B004A4212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E60641B11EBA3B2B004A4212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60641B41EBA3B2B004A4212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E60641B61EBA3B2B004A4212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60641BF1EBA3F6C004A4212 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E60641C11EBA3FF8004A4212 /* STVVisitsApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVVisitsApiClient.h; sourceTree = "<group>"; };
+		E60641C21EBA3FF8004A4212 /* STVVisitsApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitsApiClient.m; sourceTree = "<group>"; };
+		E60641C51EBA413D004A4212 /* STVApiVisit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiVisit.h; sourceTree = "<group>"; };
+		E60641C61EBA413D004A4212 /* STVApiVisit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiVisit.m; sourceTree = "<group>"; };
+		E60641C81EBA414C004A4212 /* STVApiOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiOrganization.h; sourceTree = "<group>"; };
+		E60641C91EBA414C004A4212 /* STVApiOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiOrganization.m; sourceTree = "<group>"; };
+		E60641CE1EBA446C004A4212 /* STVApiVisitMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiVisitMapper.h; sourceTree = "<group>"; };
+		E60641CF1EBA446C004A4212 /* STVApiVisitMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiVisitMapper.m; sourceTree = "<group>"; };
+		E60641D11EBA44B1004A4212 /* STVJsonMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVJsonMapper.h; sourceTree = "<group>"; };
+		E60641D21EBA44B1004A4212 /* STVJsonMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVJsonMapper.m; sourceTree = "<group>"; };
+		E60641D41EBA4909004A4212 /* STVApiOrganizatonMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiOrganizatonMapper.h; sourceTree = "<group>"; };
+		E60641D51EBA4909004A4212 /* STVApiOrganizatonMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiOrganizatonMapper.m; sourceTree = "<group>"; };
+		E60641D71EBA4ABC004A4212 /* STVApiVisitValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiVisitValidator.h; sourceTree = "<group>"; };
+		E60641D81EBA4ABC004A4212 /* STVApiVisitValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiVisitValidator.m; sourceTree = "<group>"; };
+		E60641DA1EBA4AD5004A4212 /* STVApiValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STVApiValidator.h; sourceTree = "<group>"; };
+		E60641DB1EBA4BF9004A4212 /* STVApiOrganizationValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiOrganizationValidator.h; sourceTree = "<group>"; };
+		E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiOrganizationValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +80,11 @@
 		E60641A41EBA3B2B004A4212 /* SberTechVisitsMap */ = {
 			isa = PBXGroup;
 			children = (
+				E60641BE1EBA3F07004A4212 /* Presentation */,
+				E60641BD1EBA3ED6004A4212 /* Storage */,
+				E60641BC1EBA3EB8004A4212 /* Network */,
 				E60641A81EBA3B2B004A4212 /* AppDelegate.h */,
 				E60641A91EBA3B2B004A4212 /* AppDelegate.m */,
-				E60641AB1EBA3B2B004A4212 /* ViewController.h */,
-				E60641AC1EBA3B2B004A4212 /* ViewController.m */,
-				E60641AE1EBA3B2B004A4212 /* Main.storyboard */,
 				E60641B11EBA3B2B004A4212 /* Assets.xcassets */,
 				E60641B31EBA3B2B004A4212 /* LaunchScreen.storyboard */,
 				E60641B61EBA3B2B004A4212 /* Info.plist */,
@@ -77,6 +99,69 @@
 				E60641A61EBA3B2B004A4212 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E60641BC1EBA3EB8004A4212 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E60641CC1EBA43AC004A4212 /* Validator */,
+				E60641CB1EBA4394004A4212 /* Mapper */,
+				E60641C41EBA411C004A4212 /* Model */,
+				E60641C11EBA3FF8004A4212 /* STVVisitsApiClient.h */,
+				E60641C21EBA3FF8004A4212 /* STVVisitsApiClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E60641BD1EBA3ED6004A4212 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		E60641BE1EBA3F07004A4212 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E60641BF1EBA3F6C004A4212 /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E60641C41EBA411C004A4212 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E60641C51EBA413D004A4212 /* STVApiVisit.h */,
+				E60641C61EBA413D004A4212 /* STVApiVisit.m */,
+				E60641C81EBA414C004A4212 /* STVApiOrganization.h */,
+				E60641C91EBA414C004A4212 /* STVApiOrganization.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E60641CB1EBA4394004A4212 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E60641D11EBA44B1004A4212 /* STVJsonMapper.h */,
+				E60641D21EBA44B1004A4212 /* STVJsonMapper.m */,
+				E60641CE1EBA446C004A4212 /* STVApiVisitMapper.h */,
+				E60641CF1EBA446C004A4212 /* STVApiVisitMapper.m */,
+				E60641D41EBA4909004A4212 /* STVApiOrganizatonMapper.h */,
+				E60641D51EBA4909004A4212 /* STVApiOrganizatonMapper.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E60641CC1EBA43AC004A4212 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E60641DA1EBA4AD5004A4212 /* STVApiValidator.h */,
+				E60641D71EBA4ABC004A4212 /* STVApiVisitValidator.h */,
+				E60641D81EBA4ABC004A4212 /* STVApiVisitValidator.m */,
+				E60641DB1EBA4BF9004A4212 /* STVApiOrganizationValidator.h */,
+				E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +190,7 @@
 		E606419A1EBA3B2B004A4212 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = STV;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = AlKol;
 				TargetAttributes = {
@@ -138,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60641C01EBA3F6C004A4212 /* Main.storyboard in Resources */,
 				E60641B51EBA3B2B004A4212 /* LaunchScreen.storyboard in Resources */,
 				E60641B21EBA3B2B004A4212 /* Assets.xcassets in Resources */,
-				E60641B01EBA3B2B004A4212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,23 +237,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60641AD1EBA3B2B004A4212 /* ViewController.m in Sources */,
 				E60641AA1EBA3B2B004A4212 /* AppDelegate.m in Sources */,
+				E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */,
+				E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */,
+				E60641D01EBA446C004A4212 /* STVApiVisitMapper.m in Sources */,
+				E60641D61EBA4909004A4212 /* STVApiOrganizatonMapper.m in Sources */,
+				E60641D31EBA44B1004A4212 /* STVJsonMapper.m in Sources */,
 				E60641A71EBA3B2B004A4212 /* main.m in Sources */,
+				E60641CA1EBA414C004A4212 /* STVApiOrganization.m in Sources */,
+				E60641DD1EBA4BF9004A4212 /* STVApiOrganizationValidator.m in Sources */,
+				E60641D91EBA4ABC004A4212 /* STVApiVisitValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E60641AE1EBA3B2B004A4212 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E60641AF1EBA3B2B004A4212 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E60641B31EBA3B2B004A4212 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XJ2YWQNMLV;
 				INFOPLIST_FILE = SberTechVisitsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alkol..SberTechVisitsMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XJ2YWQNMLV;
 				INFOPLIST_FILE = SberTechVisitsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alkol..SberTechVisitsMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";

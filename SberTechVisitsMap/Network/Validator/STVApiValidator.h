@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  STVApiValidator.h
 //  SberTechVisitsMap
 //
 //  Created by Aleksei Kolchanov on 03/05/2017.
 //  Copyright © 2017 AlKol. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@protocol STVApiValidator
 
-@interface ViewController : UIViewController
-
+- (BOOL)isValidApiEntity:(id)entity;
 
 @end
-
