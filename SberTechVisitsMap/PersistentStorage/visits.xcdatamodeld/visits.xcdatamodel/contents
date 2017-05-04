@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CDGeoLocation" representedClassName="." syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="organization" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDOrganization" inverseName="geoLocation" inverseEntity="CDOrganization" syncable="YES"/>
+    </entity>
+    <entity name="CDOrganization" representedClassName="." syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="geoLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDGeoLocation" inverseName="organization" inverseEntity="CDGeoLocation" syncable="YES"/>
+    </entity>
+    <entity name="CDVisit" representedClassName="" syncable="YES">
+        <attribute name="organizationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDGeoLocation" positionX="241" positionY="-619" width="128" height="88"/>
+        <element name="CDOrganization" positionX="88" positionY="-619" width="128" height="88"/>
+        <element name="CDVisit" positionX="-56" positionY="-621" width="128" height="73"/>
+    </elements>
+</model>
