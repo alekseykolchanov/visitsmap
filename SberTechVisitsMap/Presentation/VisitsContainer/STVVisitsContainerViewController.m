@@ -47,4 +47,28 @@ NSString * const kEmbedVisitsMapSegueName = @"EmbedVisitsMapSegue";
 }
 
 
+#pragma mark - STVVisitsContainerViewControllerProtocol
+- (id<STVVisitsPresenter>)listVisitsPresenter {
+    return [[self listViewController] viewModel];
+}
+
+- (id<STVVisitsPresenter>)mapVisitsPresenter {
+    return [[self mapViewController] viewModel];
+}
+
+- (void)showErrorWithText:(NSString *)errorText {
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:nil message:errorText preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* cancelButton = [UIAlertAction
+                                actionWithTitle:NSLocalizedString(@"Close", nil)
+                                style:UIAlertActionStyleCancel
+                                handler:^(UIAlertAction * action)
+                                {
+                                    [self dismissViewControllerAnimated:YES completion:nil];
+                                }];
+    [ac addAction:cancelButton];
+    
+    [self presentViewController:ac animated:YES completion:nil];
+}
+
 @end

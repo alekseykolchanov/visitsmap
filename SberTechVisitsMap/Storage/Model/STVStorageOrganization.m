@@ -17,7 +17,7 @@
 
 @implementation STVStorageOrganization
 
-- (instancetype)initWithID:(NSString *)ID title:(NSString *)title getLocation:(STVStorageGeoLocation *)geoLocation {
+- (instancetype)initWithID:(NSString *)ID title:(NSString *)title geoLocation:(STVStorageGeoLocation *)geoLocation {
     if (self = [super init]) {
         _ID = [ID copy];
         _title = [title copy];

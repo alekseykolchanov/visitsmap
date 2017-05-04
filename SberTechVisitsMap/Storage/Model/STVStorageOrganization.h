@@ -15,6 +15,6 @@
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, strong, readonly) STVStorageGeoLocation *geoLocation;
 
-- (instancetype)initWithID:(NSString *)ID title:(NSString *)title getLocation:(STVStorageGeoLocation *)geoLocation;
+- (instancetype)initWithID:(NSString *)ID title:(NSString *)title geoLocation:(STVStorageGeoLocation *)geoLocation;
 
 @end

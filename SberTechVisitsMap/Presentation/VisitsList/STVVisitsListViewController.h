@@ -12,5 +12,7 @@
 @interface STVVisitsListViewController : STVModuleViewController <STVVisitsListViewControllerProtocol>
 
 @property (nonatomic, strong) STVVisitsListViewModel *viewModel;
+@property (nonatomic, strong) NSString *selectedVisit;
+
 
 @end

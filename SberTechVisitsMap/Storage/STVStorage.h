@@ -8,11 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "STVStorageModels.h"
+#import "STVVisitsApiClient.h"
+#import "STVDatabase.h"
+#import "STVStorageEntitiesFabric.h"
 
 @interface STVStorage : NSObject
 
++ (STVStorage *)sharedInstance;
+
+@property (nonatomic, strong) STVVisitsApiClient *apiClient;
+@property (nonatomic, strong) STVDatabase *database;
+@property (nonatomic, strong) STVStorageEntitiesFabric *entitisFabric;
+
 - (void)syncVisitsWithCompletion:(void (^)(NSError *error))completion;
 - (NSArray *)getAllVisits;
-- (STVStorageOrganization *)organizationWithId:(NSString *)organizationId;
+- (NSArray *)getAllOrganizations;
 
 @end

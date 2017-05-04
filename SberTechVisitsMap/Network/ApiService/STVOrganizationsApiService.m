@@ -40,9 +40,9 @@ NSString * const kGetOrganizationsPathUrl = @"getOrganizationListTest";
     NSAssert(url != nil, @"get visits url is nil");
     
     __weak STVOrganizationsApiService *weakSelf = self;
-    [urlSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[urlSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         [weakSelf manageGetOrganizationsData:data response:response error:error completion:completion];
-    }];
+    }] resume];
 }
 
 #pragma mark - Private

@@ -11,6 +11,11 @@
 
 @interface STVCoreDataController : NSObject
 
+@property (nonatomic, copy, readonly) NSString *dataModelFileName;
+
+- (id)initWithDataModelFileName:(NSString *)dataModelFileName;
+
+
 - (NSURL *)applicationDocumentsDirectory;
 
 - (NSManagedObjectContext *)masterManagedObjectContext;

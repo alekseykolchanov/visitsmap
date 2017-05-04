@@ -40,9 +40,9 @@ NSString * const kGetVisitsPathUrl = @"getVisitsListTest";
     NSAssert(url != nil, @"get visits url is nil");
     
     __weak STVVisitsApiService *weakSelf = self;
-    [urlSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[urlSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         [weakSelf manageGetVisitsData:data response:response error:error completion:completion];
-    }];
+    }] resume];
 }
 
 #pragma mark - Private

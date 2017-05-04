@@ -8,8 +8,6 @@
 
 #import "STVCoreDataController.h"
 
-NSString * const kDataModelFileName = @"visits";
-
 @interface STVCoreDataController()
 
 @property (strong, nonatomic) NSManagedObjectContext *masterManagedObjectContext;
@@ -20,6 +18,13 @@ NSString * const kDataModelFileName = @"visits";
 @end
 
 @implementation STVCoreDataController
+
+- (id)initWithDataModelFileName:(NSString *)dataModelFileName {
+    if (self = [super init]) {
+        _dataModelFileName = dataModelFileName;
+    }
+    return self;
+}
 
 #pragma mark - Core Data stack
 
@@ -98,7 +103,7 @@ NSString * const kDataModelFileName = @"visits";
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:kDataModelFileName withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:[self dataModelFileName] withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -111,7 +116,7 @@ NSString * const kDataModelFileName = @"visits";
         return _persistentStoreCoordinator;
     }
     
-    NSString *fileName = [NSString stringWithFormat:@"%@.sqlite", kDataModelFileName];
+    NSString *fileName = [NSString stringWithFormat:@"%@.sqlite", [self dataModelFileName]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:fileName];
     
     NSError *error = nil;
