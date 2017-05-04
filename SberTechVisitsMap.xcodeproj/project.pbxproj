@@ -11,7 +11,6 @@
 		E60641AA1EBA3B2B004A4212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641A91EBA3B2B004A4212 /* AppDelegate.m */; };
 		E60641B21EBA3B2B004A4212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60641B11EBA3B2B004A4212 /* Assets.xcassets */; };
 		E60641B51EBA3B2B004A4212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60641B31EBA3B2B004A4212 /* LaunchScreen.storyboard */; };
-		E60641C01EBA3F6C004A4212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60641BF1EBA3F6C004A4212 /* Main.storyboard */; };
 		E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C21EBA3FF8004A4212 /* STVVisitsApiClient.m */; };
 		E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C61EBA413D004A4212 /* STVApiVisit.m */; };
 		E60641CA1EBA414C004A4212 /* STVApiOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641C91EBA414C004A4212 /* STVApiOrganization.m */; };
@@ -28,6 +27,13 @@
 		E60641FF1EBB22A0004A4212 /* STVCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641FA1EBB22A0004A4212 /* STVCoreDataController.m */; };
 		E60642001EBB22A0004A4212 /* STVDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641FC1EBB22A0004A4212 /* STVDatabase.m */; };
 		E60642011EBB22A0004A4212 /* visits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E60641FD1EBB22A0004A4212 /* visits.xcdatamodeld */; };
+		E60642461EBB2EA6004A4212 /* CDOrganization+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E606423B1EBB2EA6004A4212 /* CDOrganization+CoreDataClass.m */; };
+		E60642471EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E606423D1EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.m */; };
+		E60642481EBB2EA6004A4212 /* CDVisit+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E606423F1EBB2EA6004A4212 /* CDVisit+CoreDataClass.m */; };
+		E60642491EBB2EA6004A4212 /* CDVisit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642411EBB2EA6004A4212 /* CDVisit+CoreDataProperties.m */; };
+		E606424A1EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642431EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.m */; };
+		E606424B1EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642451EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.m */; };
+		E606424C1EBB2ECC004A4212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E606424E1EBB2ECC004A4212 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +44,6 @@
 		E60641B11EBA3B2B004A4212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60641B41EBA3B2B004A4212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E60641B61EBA3B2B004A4212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E60641BF1EBA3F6C004A4212 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E60641C11EBA3FF8004A4212 /* STVVisitsApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVVisitsApiClient.h; sourceTree = "<group>"; };
 		E60641C21EBA3FF8004A4212 /* STVVisitsApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitsApiClient.m; sourceTree = "<group>"; };
 		E60641C51EBA413D004A4212 /* STVApiVisit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiVisit.h; sourceTree = "<group>"; };
@@ -70,6 +75,20 @@
 		E60641FB1EBB22A0004A4212 /* STVDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVDatabase.h; sourceTree = "<group>"; };
 		E60641FC1EBB22A0004A4212 /* STVDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVDatabase.m; sourceTree = "<group>"; };
 		E60641FE1EBB22A0004A4212 /* visits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = visits.xcdatamodel; sourceTree = "<group>"; };
+		E606423A1EBB2EA6004A4212 /* CDOrganization+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDOrganization+CoreDataClass.h"; sourceTree = "<group>"; };
+		E606423B1EBB2EA6004A4212 /* CDOrganization+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDOrganization+CoreDataClass.m"; sourceTree = "<group>"; };
+		E606423C1EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDOrganization+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E606423D1EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDOrganization+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E606423E1EBB2EA6004A4212 /* CDVisit+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDVisit+CoreDataClass.h"; sourceTree = "<group>"; };
+		E606423F1EBB2EA6004A4212 /* CDVisit+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDVisit+CoreDataClass.m"; sourceTree = "<group>"; };
+		E60642401EBB2EA6004A4212 /* CDVisit+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDVisit+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E60642411EBB2EA6004A4212 /* CDVisit+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDVisit+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E60642421EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDGeoLocation+CoreDataClass.h"; sourceTree = "<group>"; };
+		E60642431EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDGeoLocation+CoreDataClass.m"; sourceTree = "<group>"; };
+		E60642441EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDGeoLocation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E60642451EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDGeoLocation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E606424D1EBB2ECC004A4212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E606424F1EBB2F48004A4212 /* CDEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDEntities.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +160,7 @@
 		E60641BE1EBA3F07004A4212 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				E60641BF1EBA3F6C004A4212 /* Main.storyboard */,
+				E606424E1EBB2ECC004A4212 /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -221,6 +240,19 @@
 		E60642021EBB23E7004A4212 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				E606424F1EBB2F48004A4212 /* CDEntities.h */,
+				E606423A1EBB2EA6004A4212 /* CDOrganization+CoreDataClass.h */,
+				E606423B1EBB2EA6004A4212 /* CDOrganization+CoreDataClass.m */,
+				E606423C1EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.h */,
+				E606423D1EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.m */,
+				E606423E1EBB2EA6004A4212 /* CDVisit+CoreDataClass.h */,
+				E606423F1EBB2EA6004A4212 /* CDVisit+CoreDataClass.m */,
+				E60642401EBB2EA6004A4212 /* CDVisit+CoreDataProperties.h */,
+				E60642411EBB2EA6004A4212 /* CDVisit+CoreDataProperties.m */,
+				E60642421EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.h */,
+				E60642431EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.m */,
+				E60642441EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.h */,
+				E60642451EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -286,7 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60641C01EBA3F6C004A4212 /* Main.storyboard in Resources */,
+				E606424C1EBB2ECC004A4212 /* Main.storyboard in Resources */,
 				E60641B51EBA3B2B004A4212 /* LaunchScreen.storyboard in Resources */,
 				E60641B21EBA3B2B004A4212 /* Assets.xcassets in Resources */,
 			);
@@ -299,11 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60642481EBB2EA6004A4212 /* CDVisit+CoreDataClass.m in Sources */,
+				E60642491EBB2EA6004A4212 /* CDVisit+CoreDataProperties.m in Sources */,
 				E60641AA1EBA3B2B004A4212 /* AppDelegate.m in Sources */,
 				E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */,
 				E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */,
 				E60641D01EBA446C004A4212 /* STVApiVisitMapper.m in Sources */,
 				E60641EA1EBB1404004A4212 /* STVApiService.m in Sources */,
+				E606424A1EBB2EA6004A4212 /* CDGeoLocation+CoreDataClass.m in Sources */,
+				E60642461EBB2EA6004A4212 /* CDOrganization+CoreDataClass.m in Sources */,
 				E60641E71EBB1383004A4212 /* STVOrganizationsApiService.m in Sources */,
 				E60641D61EBA4909004A4212 /* STVApiOrganizatonMapper.m in Sources */,
 				E60641E41EBB0CE0004A4212 /* STVApiServiceError.m in Sources */,
@@ -313,8 +349,10 @@
 				E60641A71EBA3B2B004A4212 /* main.m in Sources */,
 				E60642011EBB22A0004A4212 /* visits.xcdatamodeld in Sources */,
 				E60641CA1EBA414C004A4212 /* STVApiOrganization.m in Sources */,
+				E606424B1EBB2EA6004A4212 /* CDGeoLocation+CoreDataProperties.m in Sources */,
 				E60641FF1EBB22A0004A4212 /* STVCoreDataController.m in Sources */,
 				E60641DD1EBA4BF9004A4212 /* STVApiOrganizationValidator.m in Sources */,
+				E60642471EBB2EA6004A4212 /* CDOrganization+CoreDataProperties.m in Sources */,
 				E60641D91EBA4ABC004A4212 /* STVApiVisitValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +366,14 @@
 				E60641B41EBA3B2B004A4212 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E606424E1EBB2ECC004A4212 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E606424D1EBB2ECC004A4212 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
