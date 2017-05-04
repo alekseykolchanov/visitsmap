@@ -22,9 +22,16 @@ NSString * const kEmbedVisitsMapSegueName = @"EmbedVisitsMapSegue";
 
 @implementation STVVisitsContainerViewController
 
+- (void)buildModule {
+    STVVisitsContainerViewModel *viewModel = [STVVisitsContainerViewModel new];
+    [self setViewModel:viewModel];
+    [viewModel setViewController:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [[self viewModel] viewDidLoad];
 }
 
 

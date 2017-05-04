@@ -37,6 +37,9 @@
 		E606426B1EBB4932004A4212 /* STVVisitsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E606426A1EBB4932004A4212 /* STVVisitsMapViewController.m */; };
 		E606426D1EBB4D84004A4212 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E606426C1EBB4D84004A4212 /* MapKit.framework */; };
 		E60642711EBB4FEB004A4212 /* STVVisitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642701EBB4FEB004A4212 /* STVVisitCollectionViewCell.m */; };
+		E60642761EBB55AF004A4212 /* STVVisitsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642751EBB55AF004A4212 /* STVVisitsListViewModel.m */; };
+		E606427A1EBB5748004A4212 /* STVModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60642791EBB5748004A4212 /* STVModuleViewController.m */; };
+		E606427D1EBB599E004A4212 /* STVVisitsContainerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E606427C1EBB599E004A4212 /* STVVisitsContainerViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +103,12 @@
 		E60642701EBB4FEB004A4212 /* STVVisitCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitCollectionViewCell.m; sourceTree = "<group>"; };
 		E60642721EBB523A004A4212 /* STVVisitsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STVVisitsPresenter.h; sourceTree = "<group>"; };
 		E60642731EBB5267004A4212 /* STVVisitsPresenterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STVVisitsPresenterDelegate.h; sourceTree = "<group>"; };
+		E60642741EBB55AF004A4212 /* STVVisitsListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVVisitsListViewModel.h; sourceTree = "<group>"; };
+		E60642751EBB55AF004A4212 /* STVVisitsListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitsListViewModel.m; sourceTree = "<group>"; };
+		E60642781EBB5748004A4212 /* STVModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVModuleViewController.h; sourceTree = "<group>"; };
+		E60642791EBB5748004A4212 /* STVModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVModuleViewController.m; sourceTree = "<group>"; };
+		E606427B1EBB599E004A4212 /* STVVisitsContainerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVVisitsContainerViewModel.h; sourceTree = "<group>"; };
+		E606427C1EBB599E004A4212 /* STVVisitsContainerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitsContainerViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +182,7 @@
 		E60641BE1EBA3F07004A4212 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E60642771EBB56FA004A4212 /* Module */,
 				E60642721EBB523A004A4212 /* STVVisitsPresenter.h */,
 				E60642731EBB5267004A4212 /* STVVisitsPresenterDelegate.h */,
 				E60642611EBB488D004A4212 /* VisitsContainer */,
@@ -302,6 +312,8 @@
 			children = (
 				E60642621EBB48CC004A4212 /* STVVisitsContainerViewController.h */,
 				E60642631EBB48CC004A4212 /* STVVisitsContainerViewController.m */,
+				E606427B1EBB599E004A4212 /* STVVisitsContainerViewModel.h */,
+				E606427C1EBB599E004A4212 /* STVVisitsContainerViewModel.m */,
 			);
 			path = VisitsContainer;
 			sourceTree = "<group>";
@@ -312,6 +324,8 @@
 				E606426E1EBB4FA1004A4212 /* VisitCollectionViewCell */,
 				E60642661EBB491F004A4212 /* STVVisitsListViewController.h */,
 				E60642671EBB491F004A4212 /* STVVisitsListViewController.m */,
+				E60642741EBB55AF004A4212 /* STVVisitsListViewModel.h */,
+				E60642751EBB55AF004A4212 /* STVVisitsListViewModel.m */,
 			);
 			path = VisitsList;
 			sourceTree = "<group>";
@@ -323,6 +337,15 @@
 				E60642701EBB4FEB004A4212 /* STVVisitCollectionViewCell.m */,
 			);
 			path = VisitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E60642771EBB56FA004A4212 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E60642781EBB5748004A4212 /* STVModuleViewController.h */,
+				E60642791EBB5748004A4212 /* STVModuleViewController.m */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +424,7 @@
 			files = (
 				E60641AA1EBA3B2B004A4212 /* AppDelegate.m in Sources */,
 				E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */,
+				E60642761EBB55AF004A4212 /* STVVisitsListViewModel.m in Sources */,
 				E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */,
 				E606426B1EBB4932004A4212 /* STVVisitsMapViewController.m in Sources */,
 				E60641D01EBA446C004A4212 /* STVApiVisitMapper.m in Sources */,
@@ -422,7 +446,9 @@
 				E60641D91EBA4ABC004A4212 /* STVApiVisitValidator.m in Sources */,
 				E606425A1EBB4504004A4212 /* STVStorageOrganization.m in Sources */,
 				E60642571EBB44EF004A4212 /* STVStorageVisit.m in Sources */,
+				E606427A1EBB5748004A4212 /* STVModuleViewController.m in Sources */,
 				E60642681EBB491F004A4212 /* STVVisitsListViewController.m in Sources */,
+				E606427D1EBB599E004A4212 /* STVVisitsContainerViewModel.m in Sources */,
 				E60642711EBB4FEB004A4212 /* STVVisitCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

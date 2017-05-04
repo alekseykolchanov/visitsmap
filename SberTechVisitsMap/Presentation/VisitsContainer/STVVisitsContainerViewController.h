@@ -6,8 +6,11 @@
 //  Copyright © 2017 AlKol. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "STVModuleViewController.h"
+#import "STVVisitsContainerViewModel.h"
 
-@interface STVVisitsContainerViewController : UIViewController
+@interface STVVisitsContainerViewController : STVModuleViewController <STVVisitsContainerViewControllerProtocol>
+
+@property (nonatomic, strong) STVVisitsContainerViewModel *viewModel;
 
 @end

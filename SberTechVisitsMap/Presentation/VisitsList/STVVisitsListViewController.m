@@ -7,6 +7,7 @@
 //
 
 #import "STVVisitsListViewController.h"
+#import "STVVisitsListViewModel.h"
 
 NSString * const kVisitCollectionViewCellIdentifier = @"STVVisitCollectionViewCell";
 
@@ -18,10 +19,16 @@ NSString * const kVisitCollectionViewCellIdentifier = @"STVVisitCollectionViewCe
 
 @implementation STVVisitsListViewController
 
+- (void)buildModule {
+    STVVisitsListViewModel *viewModel = [STVVisitsListViewModel new];
+    [self setViewModel:viewModel];
+    [viewModel setViewController:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    [[self viewModel] viewDidLoad];
 }
 
 
