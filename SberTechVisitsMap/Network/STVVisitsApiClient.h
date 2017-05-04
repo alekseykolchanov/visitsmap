@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class STVVisitsApiService;
+@class STVOrganizationsApiService;
 
 @interface STVVisitsApiClient : NSObject
+
+@property (nonatomic, strong) NSString *apiUrl;
 
 /**
  Makes a request and returns visits list in completion block

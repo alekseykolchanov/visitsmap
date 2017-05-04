@@ -20,6 +20,10 @@
 		E60641D61EBA4909004A4212 /* STVApiOrganizatonMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641D51EBA4909004A4212 /* STVApiOrganizatonMapper.m */; };
 		E60641D91EBA4ABC004A4212 /* STVApiVisitValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641D81EBA4ABC004A4212 /* STVApiVisitValidator.m */; };
 		E60641DD1EBA4BF9004A4212 /* STVApiOrganizationValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */; };
+		E60641E11EBB070C004A4212 /* STVVisitsApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641E01EBB070C004A4212 /* STVVisitsApiService.m */; };
+		E60641E41EBB0CE0004A4212 /* STVApiServiceError.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641E31EBB0CE0004A4212 /* STVApiServiceError.m */; };
+		E60641E71EBB1383004A4212 /* STVOrganizationsApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641E61EBB1383004A4212 /* STVOrganizationsApiService.m */; };
+		E60641EA1EBB1404004A4212 /* STVApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = E60641E91EBB1404004A4212 /* STVApiService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,14 @@
 		E60641DA1EBA4AD5004A4212 /* STVApiValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STVApiValidator.h; sourceTree = "<group>"; };
 		E60641DB1EBA4BF9004A4212 /* STVApiOrganizationValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiOrganizationValidator.h; sourceTree = "<group>"; };
 		E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiOrganizationValidator.m; sourceTree = "<group>"; };
+		E60641DF1EBB070C004A4212 /* STVVisitsApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVVisitsApiService.h; sourceTree = "<group>"; };
+		E60641E01EBB070C004A4212 /* STVVisitsApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVVisitsApiService.m; sourceTree = "<group>"; };
+		E60641E21EBB0CE0004A4212 /* STVApiServiceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiServiceError.h; sourceTree = "<group>"; };
+		E60641E31EBB0CE0004A4212 /* STVApiServiceError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiServiceError.m; sourceTree = "<group>"; };
+		E60641E51EBB1383004A4212 /* STVOrganizationsApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVOrganizationsApiService.h; sourceTree = "<group>"; };
+		E60641E61EBB1383004A4212 /* STVOrganizationsApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVOrganizationsApiService.m; sourceTree = "<group>"; };
+		E60641E81EBB1404004A4212 /* STVApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVApiService.h; sourceTree = "<group>"; };
+		E60641E91EBB1404004A4212 /* STVApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVApiService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		E60641BC1EBA3EB8004A4212 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E60641DE1EBB06CD004A4212 /* ApiService */,
 				E60641CC1EBA43AC004A4212 /* Validator */,
 				E60641CB1EBA4394004A4212 /* Mapper */,
 				E60641C41EBA411C004A4212 /* Model */,
@@ -162,6 +175,21 @@
 				E60641DC1EBA4BF9004A4212 /* STVApiOrganizationValidator.m */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		E60641DE1EBB06CD004A4212 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E60641E21EBB0CE0004A4212 /* STVApiServiceError.h */,
+				E60641E31EBB0CE0004A4212 /* STVApiServiceError.m */,
+				E60641E81EBB1404004A4212 /* STVApiService.h */,
+				E60641E91EBB1404004A4212 /* STVApiService.m */,
+				E60641DF1EBB070C004A4212 /* STVVisitsApiService.h */,
+				E60641E01EBB070C004A4212 /* STVVisitsApiService.m */,
+				E60641E51EBB1383004A4212 /* STVOrganizationsApiService.h */,
+				E60641E61EBB1383004A4212 /* STVOrganizationsApiService.m */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +269,12 @@
 				E60641C31EBA3FF8004A4212 /* STVVisitsApiClient.m in Sources */,
 				E60641C71EBA413D004A4212 /* STVApiVisit.m in Sources */,
 				E60641D01EBA446C004A4212 /* STVApiVisitMapper.m in Sources */,
+				E60641EA1EBB1404004A4212 /* STVApiService.m in Sources */,
+				E60641E71EBB1383004A4212 /* STVOrganizationsApiService.m in Sources */,
 				E60641D61EBA4909004A4212 /* STVApiOrganizatonMapper.m in Sources */,
+				E60641E41EBB0CE0004A4212 /* STVApiServiceError.m in Sources */,
 				E60641D31EBA44B1004A4212 /* STVJsonMapper.m in Sources */,
+				E60641E11EBB070C004A4212 /* STVVisitsApiService.m in Sources */,
 				E60641A71EBA3B2B004A4212 /* main.m in Sources */,
 				E60641CA1EBA414C004A4212 /* STVApiOrganization.m in Sources */,
 				E60641DD1EBA4BF9004A4212 /* STVApiOrganizationValidator.m in Sources */,

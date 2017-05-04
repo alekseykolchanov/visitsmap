@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "STVApiValidator.h"
 
-@interface STVApiOrganizationValidator : NSObject
+@interface STVApiOrganizationValidator : NSObject <STVApiValidator>
 
 @end
