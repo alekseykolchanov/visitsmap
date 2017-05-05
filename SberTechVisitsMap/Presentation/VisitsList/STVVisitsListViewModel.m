@@ -7,6 +7,7 @@
 //
 
 #import "STVVisitsListViewModel.h"
+#import "STVVisitsPresenterDelegate.h"
 
 @implementation STVVisitsListViewModel
 
@@ -15,7 +16,7 @@
 }
 
 - (void)didSelectVisit:(STVVisit *)visit {
-    
+    [[self visitsPresenterDelegate] visitsPresenter:self didSelectVisitWithId:[visit identifier]];
 }
 
 #pragma mark - STVVisitsPresenter
@@ -30,7 +31,7 @@
 }
 
 - (void)selectVisitWithId:(NSString *)visitId {
-    
+    [[self viewController] selectVisitWithId:visitId makeVisible:YES animated:YES];
 }
 
 @end

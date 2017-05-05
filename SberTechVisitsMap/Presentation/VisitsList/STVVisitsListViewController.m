@@ -9,7 +9,6 @@
 #import "STVVisitsListViewController.h"
 #import "STVVisitsListViewModel.h"
 #import "STVVisitCollectionViewCell.h"
-#import "STVVisit.h"
 
 NSString * const kVisitCollectionViewCellIdentifier = @"STVVisitCollectionViewCell";
 
@@ -57,6 +56,23 @@ NSString * const kVisitCollectionViewCellIdentifier = @"STVVisitCollectionViewCe
     [[self collectionView] reloadData];
 }
 
+#pragma mark - STVVisitsListViewControllerProtocol
+- (void)selectVisitWithId:(NSString *)visitId makeVisible:(BOOL)makeVisible animated:(BOOL)animated {
+    NSInteger visitIndex = [self indexOfVisitWithId:visitId];
+    
+    if (visitIndex == NSNotFound) {
+        return;
+    }
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:visitIndex inSection:0];
+    UICollectionViewScrollPosition scrollPosition = UICollectionViewScrollPositionNone;
+    if (makeVisible) {
+        scrollPosition = UICollectionViewScrollPositionTop;
+    }
+    
+    [[self collectionView] selectItemAtIndexPath:indexPath animated:animated scrollPosition:scrollPosition];
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [[self visits] count];
@@ -76,6 +92,18 @@ NSString * const kVisitCollectionViewCellIdentifier = @"STVVisitCollectionViewCe
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     STVVisit *visit = [self visits][[indexPath item]];
     [[self viewModel] didSelectVisit:visit];
+}
+
+#pragma mark - Private
+- (NSInteger)indexOfVisitWithId:(NSString *)visitId {
+    __block NSInteger index = NSNotFound;
+    [[self visits] enumerateObjectsUsingBlock:^(STVVisit *visit, NSUInteger idx, BOOL *stop) {
+        if ([[visit identifier] isEqualToString:visitId]) {
+            index = idx;
+            *stop = YES;
+        }
+    }];
+    return index;
 }
 
 

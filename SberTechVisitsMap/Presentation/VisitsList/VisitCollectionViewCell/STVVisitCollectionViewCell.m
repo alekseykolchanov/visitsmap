@@ -20,7 +20,8 @@
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     
-    UIColor *backgroundColor = selected ? [UIColor greenColor] : [UIColor whiteColor];
+    UIColor *selectedBackgroundColor = [UIColor colorWithRed:0.0f green:208.0f/255.0f blue:115.0f/255.0f alpha:1.0];
+    UIColor *backgroundColor = selected ? selectedBackgroundColor : [UIColor whiteColor];
     [[self contentView] setBackgroundColor:backgroundColor];
 }
 

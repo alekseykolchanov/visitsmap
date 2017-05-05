@@ -7,7 +7,11 @@
 //
 
 #import "STVVisitsContainerViewModel.h"
+#import "STVVisitsPresenterDelegate.h"
 
+@interface STVVisitsContainerViewModel ()<STVVisitsPresenterDelegate>
+
+@end
 
 @implementation STVVisitsContainerViewModel
 
@@ -22,6 +26,8 @@
 
 - (void)viewDidLoad {
     [self reloadWithCompletion:nil];
+    [[[self viewController] listVisitsPresenter] setVisitsPresenterDelegate:self];
+    [[[self viewController] mapVisitsPresenter] setVisitsPresenterDelegate:self];
 }
 
 - (void)reloadWithCompletion:(void (^)(BOOL success))completion {
@@ -36,6 +42,16 @@
         [[[self viewController] listVisitsPresenter] setVisits:visits];
         [[[self viewController] mapVisitsPresenter] setVisits:visits];
     }];
+}
+
+#pragma mark - STVVisitsPresenterDelegate
+- (void)visitsPresenter:(id<STVVisitsPresenter>)presenter didSelectVisitWithId:(NSString *)visitId {
+    
+    if (presenter == [[self viewController] listVisitsPresenter]) {
+        [[[self viewController] mapVisitsPresenter] selectVisitWithId:visitId];
+    }else if (presenter == [[self viewController] mapVisitsPresenter]) {
+        [[[self viewController] listVisitsPresenter] selectVisitWithId:visitId];
+    }
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "STVModuleViewController.h"
 #import "STVVisitsMapViewModel.h"
 
-@interface STVVisitsMapViewController : STVModuleViewController
+@interface STVVisitsMapViewController : STVModuleViewController<STVVisitsMapViewControllerProtocol>
 
 @property (nonatomic, strong) STVVisitsMapViewModel *viewModel;
 
